@@ -47,5 +47,6 @@ catch( Exception $e )
 // Finally
 $redirectURI = '/';
 if( $logoutINI->hasVariable( 'LogoutSettings', 'LogoutRedirect' ) )
-    $logoutINI->Variable( 'LogoutSettings', 'LogoutRedirect' );
+    $redirectURI = $logoutINI->variable( 'LogoutSettings', 'LogoutRedirect' );
+
 $Module->redirectTo( $redirectURI );
