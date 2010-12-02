@@ -57,7 +57,8 @@ To work properly, **jvLogout** overrides *[UserSettings].LogoutRedirect* from si
 So in order to be able to make custom logout redirection, you can define your URI in an override of **jvlogout.ini** 
 (defined to */user/login* by defaut, like the setting in site.ini) :
 
-.. code-block:: ini
+::
+
   [LogoutSettings]
   LogoutRedirect=/my/custom/uri
 
