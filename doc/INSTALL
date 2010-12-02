@@ -1,0 +1,22 @@
+=======================
+ jvLogout Installation
+=======================
+
+1. Download the extension archive from http://projects.ez.no/jvlogout and unpack it to your eZ Publish *extension/* directory
+
+2. Activate the extension in **settings/override/site.ini.append.php**
+
+3. Clear your INI cache
+
+::
+
+  php bin/php/ezcache.php --clear-tag=ini
+
+4. Regenerate the classes autoload array
+
+::
+
+  php bin/php/ezpgenerateautoloads.php -e -p
+
+5. **jvLogout** is now ready to use, but you need to declare/develop logout handlers.
+   See the **README.rst** for more info about that. 

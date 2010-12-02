@@ -17,7 +17,7 @@ your logout handler class in **jvlogout.ini**.
 
 Example :
 
-.. code-block:: php
+::
 
   <?php
   class MyLogoutHandler implements IJVLogoutHandler
@@ -39,9 +39,9 @@ Example :
       }
   }
 
-Declare your logout handler class in an override of **jvlogout.ini** (let's say *settings/override/jvlogout.ini.append.php*
+Declare your logout handler class in an override of **jvlogout.ini** (let's say *settings/override/jvlogout.ini.append.php*)
 
-.. code-block:: ini
+::
 
   [LogoutSettings]
   AvailableHandlers[]=MyLogoutHandler
